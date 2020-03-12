@@ -107,7 +107,7 @@ ale zakladam ze jak sciezka bedzie zla to wywali FileNotFoE
 
                     }
                     serializer.Serialize(writer, uczelnia);
-                    Console.WriteLine(line + "zakonczenie robienia xml i log ,nacisnij cokolwiek i sprawdz bin");
+                    Console.WriteLine(line + "zakonczenie robienia xml i log ,nacisnij enter i sprawdz bin");
 
                 }
 
