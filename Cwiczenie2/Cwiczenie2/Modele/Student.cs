@@ -50,7 +50,7 @@ namespace Cwiczenie2
 }
 
 
-public class Uczenia
+public class Uczelnia
 {
     [XmlAttribute(attributeName: "createdAt")]
     public string czas { get; set; }

@@ -22,9 +22,9 @@ namespace Cwiczenie2
             var m = new Dictionary<string, int>();
 
             //PROGRAM
-            string plikWejscie = @"Data/dane.csv";
 
-            
+
+            string plikWejscie = @"Data/dane.csv";
 
             List<Student> studenci = CzytajLinie.czytaj(plikWejscie);
 
