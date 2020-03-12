@@ -6,9 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="dane.csv">
+    <None Update="Data\dane.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Modele\" />
+  </ItemGroup>
 </Project>
