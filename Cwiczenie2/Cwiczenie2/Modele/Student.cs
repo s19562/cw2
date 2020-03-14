@@ -8,6 +8,7 @@ namespace Cwiczenie2
 {
     public class Student
     {
+        internal Studies studKU;
 
         //prop + tabx2 
         //ObservableCollestion<T>
@@ -37,18 +38,34 @@ namespace Cwiczenie2
         public Studies studies { get; set; }
     }
 
-    
-    
+
+
     public class Studies
     {
 
         public string name { get; set; }
         public string mode { get; set; }
+
+    }
+
+    public class AC
+    {
+        [XmlAttribute(attributeName: "name")]
+        public String name { get; set; }
+
+        [XmlAttribute(attributeName: "numberOfStudents")]
+        public int number { get; set; }
+
     }
 
 
 }
 
+public class ActiveStudies
+{
+    [XmlElement(elementName: "studies")]
+    public List<AC> ACl { get; set; }
+}
 
 public class Uczelnia
 {
@@ -59,4 +76,8 @@ public class Uczelnia
 
     public List<Student> studenci { get; set; }
 
+    [XmlElement(elementName: "activeStudies")]
+    public ActiveStudies activeStudies { get; set; }
+
 }
+
